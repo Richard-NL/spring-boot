@@ -5,7 +5,6 @@
  */
 package nl.hoogstad.controller;
 
-import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +22,7 @@ public class HelloWorldController {
     @RequestMapping(value="/hello/{name}", method=RequestMethod.GET)
     @ResponseBody
     String name(@PathVariable String name) {
-        return "Hello " + name;
+        return "Hello " + name + " a good day to you" ;
     }
 
 }
